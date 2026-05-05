@@ -1,11 +1,11 @@
 import 'package:ecommerce_app/utils/app_textstyles.dart';
-import 'package:ecommerce_app/view/widgets/category_chips.dart';
-import 'package:ecommerce_app/view/widgets/filter_bottom_sheet.dart';
 import 'package:ecommerce_app/view/widgets/product_grid.dart';
 import 'package:flutter/material.dart';
 
-class ShoppingScreen extends StatelessWidget {
-  const ShoppingScreen({super.key});
+import 'filter_bottom_sheet.dart';
+
+class AllProductsScreen extends StatelessWidget {
+  const AllProductsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,9 @@ class ShoppingScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
+        leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
         title: Text(
-          'Shopping',
+          'All Products',
           style: AppTextstyles.withColor(
             AppTextstyles.h3,
             isDark ? Colors.white : Colors.black,
@@ -41,17 +42,7 @@ class ShoppingScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const Column(
-        children: [
-          Padding(
-            padding: EdgeInsets.only(top: 16),
-            child: CategoryChips(),
-          ),
-          Expanded(
-            child: ProductGrid(),
-          ),
-        ],
-      ),
+      body: const ProductGrid(),
     );
   }
 }
