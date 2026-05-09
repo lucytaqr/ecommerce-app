@@ -42,6 +42,7 @@ final List<Product> products = [
     name: 'Jordan Shoes',
     price: 69.00,
     oldPrice: 189.00,
+    isFavorite: true
   ),
   Product(
     category: 'Footwear',
@@ -50,5 +51,6 @@ final List<Product> products = [
     name: 'Puma',
     price: 69.00,
     oldPrice: 189.00,
+    isFavorite: true
   ),
 ];
