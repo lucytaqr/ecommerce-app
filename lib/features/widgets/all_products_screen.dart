@@ -1,5 +1,5 @@
+import 'package:ecommerce_app/features/widgets/product_grid.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
-import 'package:ecommerce_app/view/widgets/product_grid.dart';
 import 'package:flutter/material.dart';
 
 import 'filter_bottom_sheet.dart';

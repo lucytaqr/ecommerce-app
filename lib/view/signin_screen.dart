@@ -2,10 +2,10 @@ import 'package:ecommerce_app/controllers/auth_controller.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:ecommerce_app/view/main_screen.dart';
 import 'package:ecommerce_app/view/signup_screen.dart';
-import 'package:ecommerce_app/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../features/widgets/custom_textfield.dart';
 import 'forgot_password_screen.dart';
 
 class SigninScreen extends StatelessWidget {
