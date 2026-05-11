@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
+import '../features/shipping address/shipping_address_screen.dart';
 import '../features/widgets/settings_screen.dart';
 
 class AccountScreen extends StatelessWidget {
@@ -151,7 +152,7 @@ class AccountScreen extends StatelessWidget {
                 } else if (item['title'] == 'My Orders') {
                   Get.to(() => MyOrdersScreen());
                 } else if (item['title'] == 'Shipping Address') {
-                  // navigate to shipping address screen
+                  Get.to(() => ShippingAddressScreen());
                 } else if (item['title'] == 'Help Center') {
                   // navigate to help center screen
                 }
