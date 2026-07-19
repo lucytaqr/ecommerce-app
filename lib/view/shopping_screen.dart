@@ -17,8 +17,8 @@ class ShoppingScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Shopping',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),

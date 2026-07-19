@@ -34,8 +34,8 @@ class ForgotPasswordScreen extends StatelessWidget {
               // reset password text
               Text(
                 'Reset Password',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h1,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
@@ -43,8 +43,8 @@ class ForgotPasswordScreen extends StatelessWidget {
               const SizedBox(height: 8),
               Text(
                 'Enter your email to reset your password',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.bodyLarge,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
               ),
@@ -84,8 +84,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Send Reset Link',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       Colors.white,
                     ),
                   ),
@@ -102,18 +102,18 @@ class ForgotPasswordScreen extends StatelessWidget {
   void showSuccessDialog(BuildContext context) {
     Get.dialog(
       AlertDialog(
-        title: Text('Check Your Email', style: AppTextstyles.h3),
+        title: Text('Check Your Email', style: AppTextStyles.h3),
         content: Text(
           'We have sent password recovery instructions to your email.',
-          style: AppTextstyles.bodyMedium,
+          style: AppTextStyles.bodyMedium,
         ),
         actions: [
           TextButton(
             onPressed: () => Get.back(),
             child: Text(
               'OK',
-              style: AppTextstyles.withColor(
-                AppTextstyles.buttonMedium,
+              style: AppTextStyles.withColor(
+                AppTextStyles.buttonMedium,
                 Theme.of(context).primaryColor,
               ),
             ),

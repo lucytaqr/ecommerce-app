@@ -27,8 +27,8 @@ class MyOrdersScreen extends StatelessWidget {
           ),
           title: Text(
             'My Orders',
-            style: AppTextstyles.withColor(
-              AppTextstyles.h3,
+            style: AppTextStyles.withColor(
+              AppTextStyles.h3,
               isDark ? Colors.white : Colors.black,
             ),
           ),

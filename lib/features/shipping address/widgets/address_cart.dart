@@ -61,8 +61,8 @@ class AddressCard extends StatelessWidget {
                         children: [
                           Text(
                             address.label,
-                            style: AppTextstyles.withColor(
-                              AppTextstyles.h3,
+                            style: AppTextStyles.withColor(
+                              AppTextStyles.h3,
                               Theme.of(context).textTheme.bodyLarge!.color!,
                             ),
                           ),
@@ -81,8 +81,8 @@ class AddressCard extends StatelessWidget {
                               ),
                               child: Text(
                                 'Default',
-                                style: AppTextstyles.withColor(
-                                  AppTextstyles.bodySmall,
+                                style: AppTextStyles.withColor(
+                                  AppTextStyles.bodySmall,
                                   Theme.of(context).primaryColor,
                                 ),
                               ),
@@ -93,8 +93,8 @@ class AddressCard extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         '${address.fullAddress}\n${address.city}, ${address.state} ${address.zipCode}',
-                        style: AppTextstyles.withColor(
-                          AppTextstyles.bodyMedium,
+                        style: AppTextStyles.withColor(
+                          AppTextStyles.bodyMedium,
                           isDark ? Colors.grey[400]! : Colors.grey[600]!,
                         ),
                       ),
@@ -123,8 +123,8 @@ class AddressCard extends StatelessWidget {
                         const SizedBox(width: 8),
                         Text(
                           'Edit',
-                          style: AppTextstyles.withColor(
-                            AppTextstyles.buttonMedium,
+                          style: AppTextStyles.withColor(
+                            AppTextStyles.buttonMedium,
                             Theme.of(context).primaryColor,
                           ),
                         ),
@@ -150,8 +150,8 @@ class AddressCard extends StatelessWidget {
                         const SizedBox(width: 8),
                         Text(
                           'Delete',
-                          style: AppTextstyles.withColor(
-                            AppTextstyles.buttonMedium,
+                          style: AppTextStyles.withColor(
+                            AppTextStyles.buttonMedium,
                             Colors.red,
                           ),
                         ),

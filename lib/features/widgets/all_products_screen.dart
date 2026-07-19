@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/features/widgets/product_grid.dart';
 import 'package:ecommerce_app/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'filter_bottom_sheet.dart';
 
@@ -14,11 +15,11 @@ class AllProductsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+        leading: IconButton(onPressed: () => Get.back(), icon: Icon(Icons.arrow_back_ios)),
         title: Text(
           'All Products',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),

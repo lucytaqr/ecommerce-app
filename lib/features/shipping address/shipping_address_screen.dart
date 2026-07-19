@@ -25,8 +25,8 @@ class ShippingAddressScreen extends StatelessWidget {
         ),
         title: Text(
           'Shipping Address',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),
@@ -77,8 +77,8 @@ class ShippingAddressScreen extends StatelessWidget {
               children: [
                 Text(
                   'Edit Address',
-                  style: AppTextstyles.withColor(
-                    AppTextstyles.h3,
+                  style: AppTextStyles.withColor(
+                    AppTextStyles.h3,
                     Theme.of(context).textTheme.bodyLarge!.color!,
                   ),
                 ),
@@ -151,8 +151,8 @@ class ShippingAddressScreen extends StatelessWidget {
                 ),
                 child: Text(
                   'Update Address',
-                  style: AppTextstyles.withColor(
-                    AppTextstyles.buttonMedium,
+                  style: AppTextStyles.withColor(
+                    AppTextStyles.buttonMedium,
                     Colors.white,
                   ),
                 ),
@@ -192,8 +192,8 @@ class ShippingAddressScreen extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               'Delete Address',
-              style: AppTextstyles.withColor(
-                AppTextstyles.h3,
+              style: AppTextStyles.withColor(
+                AppTextStyles.h3,
                 Theme.of(context).textTheme.bodyLarge!.color!,
               ),
             ),
@@ -201,8 +201,8 @@ class ShippingAddressScreen extends StatelessWidget {
             Text(
               'Are you sure you want to delete this address?',
               textAlign: TextAlign.center,
-              style: AppTextstyles.withColor(
-                AppTextstyles.bodyMedium,
+              style: AppTextStyles.withColor(
+                AppTextStyles.bodyMedium,
                 isDark ? Colors.grey[400]! : Colors.grey[600]!,
               ),
             ),
@@ -223,8 +223,8 @@ class ShippingAddressScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'Cancel',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.buttonMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.buttonMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
                       ),
                     ),
@@ -249,8 +249,8 @@ class ShippingAddressScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'Delete',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.buttonMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.buttonMedium,
                         Colors.white,
                       ),
                     ),
@@ -317,8 +317,8 @@ class ShippingAddressScreen extends StatelessWidget {
               children: [
                 Text(
                   'Add New Address',
-                  style: AppTextstyles.withColor(
-                    AppTextstyles.h3,
+                  style: AppTextStyles.withColor(
+                    AppTextStyles.h3,
                     Theme.of(context).textTheme.bodyLarge!.color!,
                   ),
                 ),
@@ -378,8 +378,8 @@ class ShippingAddressScreen extends StatelessWidget {
                 ),
                 child: Text(
                   'Save Address',
-                  style: AppTextstyles.withColor(
-                    AppTextstyles.buttonMedium,
+                  style: AppTextStyles.withColor(
+                    AppTextStyles.buttonMedium,
                     Colors.white,
                   ),
                 ),

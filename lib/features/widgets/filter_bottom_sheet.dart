@@ -24,8 +24,8 @@ class FilterBottomSheet {
                 children: [
                   Text(
                     'Filter Products',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.h3,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.h3,
                       Theme.of(context).textTheme.bodyLarge!.color!,
                     ),
                   ),
@@ -42,8 +42,8 @@ class FilterBottomSheet {
               const SizedBox(height: 24),
               Text(
                 'Price Range',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h3,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h3,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
@@ -94,8 +94,8 @@ class FilterBottomSheet {
 
               Text(
                 'Categories',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h3,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h3,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
@@ -122,8 +122,8 @@ class FilterBottomSheet {
                             selectedColor: Theme.of(
                               context,
                             ).primaryColor.withOpacity(0.2),
-                            labelStyle: AppTextstyles.withColor(
-                              AppTextstyles.bodyMedium,
+                            labelStyle: AppTextStyles.withColor(
+                              AppTextStyles.bodyMedium,
                               cateogory == 'All'
                                   ? Theme.of(context).primaryColor
                                   : Theme.of(
@@ -148,8 +148,8 @@ class FilterBottomSheet {
                   ),
                   child: Text(
                     'Apply Filters',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                        AppTextStyles.buttonMedium,
                       Colors.white
                     ),
                   ),

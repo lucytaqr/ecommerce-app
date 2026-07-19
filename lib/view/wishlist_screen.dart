@@ -15,8 +15,8 @@ class WishlistScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'My Wishlist',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),
@@ -71,16 +71,16 @@ class WishlistScreen extends StatelessWidget {
             children: [
               Text(
                 '$favoriteProducts Items',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h2,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h2,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
               const SizedBox(height: 4),
               Text(
                 'in your wishlist',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h2,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h2,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
               ),
@@ -94,8 +94,8 @@ class WishlistScreen extends StatelessWidget {
             ),
             child: Text(
               'Add All to Cart',
-              style: AppTextstyles.withColor(
-                AppTextstyles.buttonMedium,
+              style: AppTextStyles.withColor(
+                AppTextStyles.buttonMedium,
                 Colors.white,
               ),
             ),
@@ -145,16 +145,16 @@ class WishlistScreen extends StatelessWidget {
                 children: [
                   Text(
                     product.name,
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.bodyLarge,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.bodyLarge,
                       Theme.of(context).textTheme.bodyLarge!.color!,
                     ),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     product.category,
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.bodySmall,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.bodySmall,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
                     ),
                   ),
@@ -164,8 +164,8 @@ class WishlistScreen extends StatelessWidget {
                     children: [
                       Text(
                         '\$${product.price.toStringAsFixed(2)}',
-                        style: AppTextstyles.withColor(
-                          AppTextstyles.h3,
+                        style: AppTextStyles.withColor(
+                          AppTextStyles.h3,
                           Theme.of(context).textTheme.bodyLarge!.color!,
                         ),
                       ),

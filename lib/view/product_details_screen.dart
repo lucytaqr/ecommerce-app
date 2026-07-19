@@ -28,8 +28,8 @@ class ProductDetailsScreen extends StatelessWidget {
         ),
         title: Text(
           'Details',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),
@@ -90,16 +90,16 @@ class ProductDetailsScreen extends StatelessWidget {
                       Expanded(
                         child: Text(
                           product.name,
-                          style: AppTextstyles.withColor(
-                            AppTextstyles.h2,
+                          style: AppTextStyles.withColor(
+                            AppTextStyles.h2,
                             Theme.of(context).textTheme.bodyLarge!.color!,
                           ),
                         ),
                       ),
                       Text(
                         '\$${product.price.toStringAsFixed(2)}',
-                        style: AppTextstyles.withColor(
-                          AppTextstyles.h2,
+                        style: AppTextStyles.withColor(
+                          AppTextStyles.h2,
                           Theme.of(context).textTheme.headlineMedium!.color!,
                         ),
                       ),
@@ -107,16 +107,16 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
                   Text(
                     product.category,
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.bodyMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
                     ),
                   ),
                   SizedBox(height: screenHeight * 0.02),
                   Text(
                     'Select Size',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.labelMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.labelMedium,
                       Theme.of(context).textTheme.bodyLarge!.color!,
                     ),
                   ),
@@ -126,16 +126,16 @@ class ProductDetailsScreen extends StatelessWidget {
                   SizedBox(height: screenHeight * 0.02),
                   Text(
                     'Description',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.labelMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.labelMedium,
                       Theme.of(context).textTheme.bodyLarge!.color!,
                     ),
                   ),
                   SizedBox(height: screenHeight * 0.01),
                   Text(
                     product.description,
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.bodySmall,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.bodySmall,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
                     ),
                   ),
@@ -164,8 +164,8 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Add To Cart',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       Theme.of(context).textTheme.bodyLarge!.color!,
                     ),
                   ),
@@ -183,8 +183,8 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Buy Now',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       Colors.white,
                     ),
                   ),

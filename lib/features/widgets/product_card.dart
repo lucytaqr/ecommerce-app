@@ -74,9 +74,9 @@ class ProductCard extends StatelessWidget {
                     ),
                     child: Text(
                       '${calculateDiscount(product.price, product.oldPrice!)}% OFF',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.withWeight(
-                          AppTextstyles.bodySmall,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.withWeight(
+                          AppTextStyles.bodySmall,
                           FontWeight.bold,
                         ),
                         Colors.white,
@@ -95,8 +95,8 @@ class ProductCard extends StatelessWidget {
               children: [
                 Text(
                   product.name,
-                  style: AppTextstyles.withColor(
-                    AppTextstyles.withWeight(AppTextstyles.h3, FontWeight.bold),
+                  style: AppTextStyles.withColor(
+                    AppTextStyles.withWeight(AppTextStyles.h3, FontWeight.bold),
                     Theme.of(context).textTheme.bodyLarge!.color!,
                   ),
                   maxLines: 1,
@@ -105,8 +105,8 @@ class ProductCard extends StatelessWidget {
                 SizedBox(height: screenWidth * 0.01),
                 Text(
                   product.category,
-                  style: AppTextstyles.withColor(
-                    AppTextstyles.bodyMedium,
+                  style: AppTextStyles.withColor(
+                    AppTextStyles.bodyMedium,
                     isDark ? Colors.grey[400]! : Colors.grey[600]!,
                   ),
                 ),
@@ -115,9 +115,9 @@ class ProductCard extends StatelessWidget {
                   children: [
                     Text(
                       '\$${product.price.toStringAsFixed(2)}',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.withWeight(
-                          AppTextstyles.h3,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.withWeight(
+                          AppTextStyles.h3,
                           FontWeight.bold,
                         ),
                         Theme.of(context).textTheme.bodyLarge!.color!,
@@ -127,8 +127,8 @@ class ProductCard extends StatelessWidget {
                       SizedBox(width: screenWidth * 0.01),
                       Text(
                         '\$${product.price.toStringAsFixed(2)}',
-                        style: AppTextstyles.withColor(
-                          AppTextstyles.bodySmall,
+                        style: AppTextStyles.withColor(
+                          AppTextStyles.bodySmall,
                           isDark ? Colors.grey[400]! : Colors.grey[600]!,
                         ).copyWith(
                           decoration: TextDecoration.lineThrough,

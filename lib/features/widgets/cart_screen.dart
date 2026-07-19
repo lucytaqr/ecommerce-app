@@ -19,8 +19,8 @@ class CartScreen extends StatelessWidget {
         ),
         title: Text(
           'My Cart',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),
@@ -84,8 +84,8 @@ class CartScreen extends StatelessWidget {
                       Expanded(
                         child: Text(
                           product.name,
-                          style: AppTextstyles.withColor(
-                            AppTextstyles.bodyLarge,
+                          style: AppTextStyles.withColor(
+                            AppTextStyles.bodyLarge,
                             Theme.of(context).textTheme.bodyLarge!.color!,
                           ),
                           maxLines: 2,
@@ -110,8 +110,8 @@ class CartScreen extends StatelessWidget {
                     children: [
                       Text(
                         '\$${product.price}',
-                        style: AppTextstyles.withColor(
-                          AppTextstyles.h3,
+                        style: AppTextStyles.withColor(
+                          AppTextStyles.h3,
                           Theme.of(context).primaryColor,
                         ),
                       ),
@@ -135,8 +135,8 @@ class CartScreen extends StatelessWidget {
                             ),
                             Text(
                               '1',
-                              style: AppTextstyles.withColor(
-                                AppTextstyles.bodyLarge,
+                              style: AppTextStyles.withColor(
+                                AppTextStyles.bodyLarge,
                                 Theme.of(context).primaryColor,
                               ),
                             ),
@@ -188,8 +188,8 @@ class CartScreen extends StatelessWidget {
             const SizedBox(height: 24),
             Text(
               'Remove Item',
-              style: AppTextstyles.withColor(
-                AppTextstyles.h3,
+              style: AppTextStyles.withColor(
+                AppTextStyles.h3,
                 Theme.of(context).textTheme.bodyLarge!.color!,
               ),
             ),
@@ -197,8 +197,8 @@ class CartScreen extends StatelessWidget {
             Text(
               'Are you sure to remove this item from your cart?',
               textAlign: TextAlign.center,
-              style: AppTextstyles.withColor(
-                AppTextstyles.bodyMedium,
+              style: AppTextStyles.withColor(
+                AppTextStyles.bodyMedium,
                 isDark ? Colors.grey[400]! : Colors.grey[600]!,
               ),
             ),
@@ -219,8 +219,8 @@ class CartScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'Cancel',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.bodyMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.bodyMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
                       ),
                     ),
@@ -245,8 +245,8 @@ class CartScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'Remove',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.bodyMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.bodyMedium,
                         Colors.white,
                       ),
                     ),
@@ -283,15 +283,15 @@ class CartScreen extends StatelessWidget {
             children: [
               Text(
                 'Total (4 items)',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.bodyMedium,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.bodyMedium,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
               Text(
                 '\$599.99',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h2,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h2,
                   Theme.of(context).primaryColor,
                 ),
               ),
@@ -313,8 +313,8 @@ class CartScreen extends StatelessWidget {
               ),
               child: Text(
                 'Proceed to Checkout',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.buttonMedium,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.buttonMedium,
                   Colors.white,
                 ),
               ),

@@ -16,8 +16,8 @@ class SettingsScreen extends StatelessWidget {
         centerTitle: false,
         title: Text(
           'Settings',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),
@@ -90,8 +90,8 @@ class SettingsScreen extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
           child: Text(
             title,
-            style: AppTextstyles.withColor(
-              AppTextstyles.h3,
+            style: AppTextStyles.withColor(
+              AppTextStyles.h3,
               isDark ? Colors.grey[400]! : Colors.grey[600]!,
             ),
           ),
@@ -127,8 +127,8 @@ class SettingsScreen extends StatelessWidget {
           ),
           title: Text(
             'Dark Mode',
-            style: AppTextstyles.withColor(
-              AppTextstyles.bodyMedium,
+            style: AppTextStyles.withColor(
+              AppTextStyles.bodyMedium,
               Theme.of(context).textTheme.bodyLarge!.color!,
             ),
           ),
@@ -167,15 +167,15 @@ class SettingsScreen extends StatelessWidget {
       child: ListTile(
         title: Text(
           title,
-          style: AppTextstyles.withColor(
-            AppTextstyles.bodyMedium,
+          style: AppTextStyles.withColor(
+            AppTextStyles.bodyMedium,
             Theme.of(context).textTheme.bodyLarge!.color!,
           ),
         ),
         subtitle: Text(
           subtitle,
-          style: AppTextstyles.withColor(
-            AppTextstyles.bodySmall,
+          style: AppTextStyles.withColor(
+            AppTextStyles.bodySmall,
             isDark ? Colors.grey[400]! : Colors.grey[600]!,
           ),
         ),
@@ -215,15 +215,15 @@ class SettingsScreen extends StatelessWidget {
         leading: Icon(icon, color: Theme.of(context).primaryColor),
         title: Text(
           title,
-          style: AppTextstyles.withColor(
-            AppTextstyles.bodyMedium,
+          style: AppTextStyles.withColor(
+            AppTextStyles.bodyMedium,
             Theme.of(context).textTheme.bodyLarge!.color!,
           ),
         ),
         subtitle: Text(
           subtitle,
-          style: AppTextstyles.withColor(
-            AppTextstyles.bodySmall,
+          style: AppTextStyles.withColor(
+            AppTextStyles.bodySmall,
             isDark ? Colors.grey[400]! : Colors.grey[600]!,
           ),
         ),

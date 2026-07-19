@@ -28,8 +28,8 @@ class NotificationsScreen extends StatelessWidget {
         centerTitle: false,
         title: Text(
           'Notifications',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),
@@ -38,8 +38,8 @@ class NotificationsScreen extends StatelessWidget {
             onPressed: () {},
             child: Text(
               'Mark all as read',
-              style: AppTextstyles.withColor(
-                AppTextstyles.h3,
+              style: AppTextStyles.withColor(
+                AppTextStyles.h3,
                 Theme.of(context).primaryColor,
               ),
             ),
@@ -94,8 +94,8 @@ class NotificationsScreen extends StatelessWidget {
         ),
         title: Text(
           notification.title,
-          style: AppTextstyles.withColor(
-            AppTextstyles.bodyLarge,
+          style: AppTextStyles.withColor(
+            AppTextStyles.bodyLarge,
             Theme.of(context).textTheme.bodyLarge!.color!,
           ),
         ),
@@ -105,8 +105,8 @@ class NotificationsScreen extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               notification.message,
-              style: AppTextstyles.withColor(
-                AppTextstyles.bodySmall,
+              style: AppTextStyles.withColor(
+                AppTextStyles.bodySmall,
                 isDark ? Colors.grey[400]! : Colors.grey[600]!,
               ),
             ),

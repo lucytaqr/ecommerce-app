@@ -56,8 +56,8 @@ class OrderCard extends StatelessWidget {
                     children: [
                       Text(
                         'Order # ${order.OrderNumber}',
-                        style: AppTextstyles.withColor(
-                          AppTextstyles.h3,
+                        style: AppTextStyles.withColor(
+                          AppTextStyles.h3,
                           Theme.of(context).textTheme.bodyLarge!.color!,
                         ),
                       ),
@@ -66,8 +66,8 @@ class OrderCard extends StatelessWidget {
 
                       Text(
                         '${order.itemCount} items . \$${order.totalAmount.toStringAsFixed(2)}',
-                        style: AppTextstyles.withColor(
-                          AppTextstyles.bodyMedium,
+                        style: AppTextStyles.withColor(
+                          AppTextStyles.bodyMedium,
                           isDark ? Colors.grey[400]! : Colors.grey[600]!,
                         ),
                       ),
@@ -89,8 +89,8 @@ class OrderCard extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 12),
               child: Text(
                 'View Details',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.bodyMedium,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.bodyMedium,
                   Theme.of(context).primaryColor,
                 ),
               ),
@@ -123,8 +123,8 @@ class OrderCard extends StatelessWidget {
       ),
       child: Text(
         type.capitalize!,
-        style: AppTextstyles.withColor(
-          AppTextstyles.bodySmall,
+        style: AppTextStyles.withColor(
+          AppTextStyles.bodySmall,
           getStatusColor(),
         ),
       ),

@@ -28,16 +28,16 @@ class SigninScreen extends StatelessWidget {
               SizedBox(height: 40),
               Text(
                 'Welcome Back!',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h1,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
               const SizedBox(height: 8),
               Text(
                 'Sign in to continue shopping',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.bodyLarge,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
               ),
@@ -82,8 +82,8 @@ class SigninScreen extends StatelessWidget {
                   onPressed: () => Get.to(() => ForgotPasswordScreen()),
                   child: Text(
                     'Forgot Password?',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       Theme.of(context).primaryColor,
                     ),
                   ),
@@ -104,8 +104,8 @@ class SigninScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Sign In',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       Colors.white,
                     ),
                   ),
@@ -118,8 +118,8 @@ class SigninScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Don't have an account?",
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
                     ),
                   ),
@@ -127,8 +127,8 @@ class SigninScreen extends StatelessWidget {
                     onPressed: () => Get.to(() => SignupScreen()),
                     child: Text(
                       'Sign up',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.buttonMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.buttonMedium,
                         Theme.of(context).primaryColor,
                       ),
                     ),

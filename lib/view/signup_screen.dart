@@ -39,8 +39,8 @@ class SignupScreen extends StatelessWidget {
               const SizedBox(height: 20),
               Text(
                 'Create Account',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.h1,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
@@ -49,8 +49,8 @@ class SignupScreen extends StatelessWidget {
 
               Text(
                 'Sign up to get started',
-                style: AppTextstyles.withColor(
-                  AppTextstyles.bodyLarge,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
               ),
@@ -142,8 +142,8 @@ class SignupScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Sign Up',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       Colors.white,
                     ),
                   ),
@@ -157,8 +157,8 @@ class SignupScreen extends StatelessWidget {
                 children: [
                   Text(
                     'Already have an account?',
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.bodyMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
                     ),
                   ),
@@ -166,8 +166,8 @@ class SignupScreen extends StatelessWidget {
                     onPressed: () => Get.off(() => SigninScreen()),
                     child: Text(
                       'Sign In',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.bodyMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.bodyMedium,
                         Theme.of(context).primaryColor,
                       ),
                     ),

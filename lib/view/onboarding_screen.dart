@@ -67,8 +67,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   Text(
                     _items[index].title,
                     textAlign: TextAlign.center,
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.h1,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.h1,
                       Theme.of(context).textTheme.bodyLarge!.color!,
                     ),
                   ),
@@ -78,8 +78,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     child: Text(
                       _items[index].description,
                       textAlign: TextAlign.center,
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.bodyLarge,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.bodyLarge,
                         isDark ? Colors.grey[400]! : Colors.grey[600]!,
                       ),
                     ),
@@ -122,8 +122,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   onPressed: () => _handleGetStarted(),
                   child: Text(
                     "Skip",
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!,
                     ),
                   ),
@@ -151,8 +151,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                   child: Text(
                     _currentPage < _items.length - 1 ? 'Next' : "Get Started",
-                    style: AppTextstyles.withColor(
-                      AppTextstyles.buttonMedium,
+                    style: AppTextStyles.withColor(
+                      AppTextStyles.buttonMedium,
                       Colors.white,
                     ),
                   ),

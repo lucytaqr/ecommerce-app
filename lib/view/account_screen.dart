@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
+import '../features/edit profile/views/screens/edit_profile_screen.dart';
 import '../features/shipping address/shipping_address_screen.dart';
 import '../features/widgets/settings_screen.dart';
 
@@ -22,8 +23,8 @@ class AccountScreen extends StatelessWidget {
         centerTitle: false,
         title: Text(
           'My Account',
-          style: AppTextstyles.withColor(
-            AppTextstyles.h3,
+          style: AppTextStyles.withColor(
+            AppTextStyles.h3,
             isDark ? Colors.white : Colors.black,
           ),
         ),
@@ -68,22 +69,22 @@ class AccountScreen extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             'Lucyta Qutsyaning',
-            style: AppTextstyles.withColor(
-              AppTextstyles.h2,
+            style: AppTextStyles.withColor(
+              AppTextStyles.h2,
               Theme.of(context).textTheme.bodyLarge!.color!,
             ),
           ),
           const SizedBox(height: 4),
           Text(
             'lucytaqr08@gmail.com',
-            style: AppTextstyles.withColor(
-              AppTextstyles.bodyMedium,
+            style: AppTextStyles.withColor(
+              AppTextStyles.bodyMedium,
               isDark ? Colors.grey[400]! : Colors.grey[600]!,
             ),
           ),
           const SizedBox(height: 16),
           OutlinedButton(
-            onPressed: () {},
+            onPressed: () => Get.to(() => const EditProfileScreen()),
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
               side: BorderSide(color: isDark ? Colors.white70 : Colors.black12),
@@ -93,8 +94,8 @@ class AccountScreen extends StatelessWidget {
             ),
             child: Text(
               'Edit Profile',
-              style: AppTextstyles.withColor(
-                AppTextstyles.buttonMedium,
+              style: AppTextStyles.withColor(
+                AppTextStyles.buttonMedium,
                 Theme.of(context).textTheme.bodyLarge!.color!,
               ),
             ),
@@ -137,8 +138,8 @@ class AccountScreen extends StatelessWidget {
               ),
               title: Text(
                 item['title'] as String,
-                style: AppTextstyles.withColor(
-                  AppTextstyles.bodyMedium,
+                style: AppTextStyles.withColor(
+                  AppTextStyles.bodyMedium,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
@@ -193,8 +194,8 @@ class AccountScreen extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               'Are you sure you want to logout?',
-              style: AppTextstyles.withColor(
-                AppTextstyles.bodyMedium,
+              style: AppTextStyles.withColor(
+                AppTextStyles.bodyMedium,
                 isDark ? Colors.grey[400]! : Colors.grey[600]!,
               ),
             ),
@@ -215,8 +216,8 @@ class AccountScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'Cancel',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.buttonMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.buttonMedium,
                         Theme.of(context).textTheme.bodyLarge!.color!,
                       ),
                     ),
@@ -244,8 +245,8 @@ class AccountScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'Logout',
-                      style: AppTextstyles.withColor(
-                        AppTextstyles.buttonMedium,
+                      style: AppTextStyles.withColor(
+                        AppTextStyles.buttonMedium,
                         Colors.white,
                       ),
                     ),
