@@ -7,6 +7,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 import '../features/edit profile/views/screens/edit_profile_screen.dart';
+import '../features/help center/views/screens/help_center_screen.dart';
 import '../features/shipping address/shipping_address_screen.dart';
 import '../features/widgets/settings_screen.dart';
 
@@ -110,6 +111,7 @@ class AccountScreen extends StatelessWidget {
     final menuItems = [
       {'icon': Icons.shopping_bag_outlined, 'title': 'My Orders'},
       {'icon': Icons.location_on_outlined, 'title': 'Shipping Address'},
+      {'icon': Icons.help_outlined, 'title': 'Help Center'},
       {'icon': Icons.logout_outlined, 'title': 'Logout'},
     ];
 
@@ -155,7 +157,7 @@ class AccountScreen extends StatelessWidget {
                 } else if (item['title'] == 'Shipping Address') {
                   Get.to(() => ShippingAddressScreen());
                 } else if (item['title'] == 'Help Center') {
-                  // navigate to help center screen
+                  Get.to(() => HelpCenterScreen());
                 }
               },
             ),
